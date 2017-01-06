@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Treatment quality and quantity</title>
+<meta name="author" content="(Jan Boone)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="./reveal.js/css/theme/sky.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>Treatment quality and quantity</h2><h3>Jan Boone</h3><h3>January 11, 2017</h3>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org4c8d91f">Introduction</a></li>
+<li><a href="#/slide-org9471817">Model</a></li>
+<li><a href="#/slide-orgbb72fc1">Conclusion</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+
+
+
+<section>
+<section id="slide-org4c8d91f">
+<h2 id="org4c8d91f">Introduction</h2>
+<div class="outline-text-2" id="text-org4c8d91f">
+</div></section>
+<section id="slide-orgd056e45">
+<h3 id="orgd056e45">The story</h3>
+<ul>
+<li>when the health care system is based on markets, 2 recurring policy
+questions:
+
+<ul>
+<li>is there a tendency to treat too many patients?</li>
+<li>are there enough incentives to invest in quality?</li>
+
+</ul></li>
+
+<li>we focus here on non-contractible quality</li>
+<li>providers invest in quality to attract patients, but then treating patients
+should be profitable</li>
+<li>if treating patients is profitable, over-treatment becomes a risk</li>
+<li>Question: how is this trade off affected by provider and insurer competition?</li>
+
+</ul>
+
+
+</section>
+<section id="slide-org300072b">
+<h3 id="org300072b">Motivation</h3>
+<ul>
+<li>The Netherlands introduced competition in health care markets 10 years ago</li>
+<li>three different markets:
+
+<ul>
+<li>health insurance market</li>
+<li>health provider market</li>
+<li>health procurement market</li>
+
+</ul></li>
+
+<li>tractable way to model these markets and characterize treatment quantity
+and quality</li>
+
+</ul>
+
+</section>
+<section id="slide-orgaf21da1">
+<h3 id="orgaf21da1">Which imperfections?</h3>
+<ul>
+<li>a lot of imperfections in health care/insurance markets</li>
+<li>here interested in the interaction of the health procurement and provider markets</li>
+<li>important imperfections here:
+
+<ul>
+<li>insurer cannot contract on value of treatment: over/under supply</li>
+<li>insurer cannot contract on quality: too low/too high; non-excludable</li>
+<li>patient may know more about quality than insurer</li>
+
+</ul></li>
+
+<li>let&rsquo;s not worry about
+
+<ul>
+<li>adverse selection</li>
+<li>patient moral hazard</li>
+<li>health insurance uptake/deadweight loss (inelastic demand)</li>
+
+</ul></li>
+
+</ul>
+
+
+</section>
+<section id="slide-org2993bb5">
+<h3 id="org2993bb5">The intuition</h3>
+<ul>
+<li>fee-for-service affects treatment decisions and provider rents</li>
+<li>capitation fees redistribute rents between insurers and providers</li>
+<li>provider competition tends to
+
+<ul>
+<li>increase (non-contractable) quality investments</li>
+
+</ul></li>
+
+<li>insurer competition tends to
+
+<ul>
+<li>raise treatments (over-supply)</li>
+<li>reduce effort investments (appropriability)</li>
+
+</ul></li>
+
+</ul>
+
+
+</section>
+<section id="slide-org365b917">
+<h3 id="org365b917">Results</h3>
+<ul>
+<li>&ldquo;monopoly&rdquo;: consumer chooses without regard for value created</li>
+<li>provider &ldquo;monopoly&rdquo; leads to zero quality investments</li>
+<li>insurer &ldquo;monopoly&rdquo; allows insurer to capture return on quality investments</li>
+<li>starting from provider and insurer &ldquo;monopoly&rdquo;, an increase in competition
+on each market is welfare enhancing</li>
+
+</ul>
+
+</section>
+<section id="slide-orgbec1d15">
+<h3 id="orgbec1d15">Simplify a lot</h3>
+<ul>
+<li>two insurers and two providers</li>
+<li>contracts are public and non-discriminating</li>
+<li>focus on symmetric equilibria</li>
+<li>no exclusive contracts</li>
+
+</ul>
+
+
+</section>
+<section id="slide-org5da2caa">
+<h3 id="org5da2caa">Literature</h3>
+<ul>
+<li>Porter and Teisberg (2006)</li>
+<li>Gaynor et al. (2015)</li>
+<li>Gal-Or (1997, 1999)</li>
+<li>Douven et al. (2014)</li>
+<li>Bijlsma et al. (2015)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org9471817">
+<h2 id="org9471817">Model</h2>
+<div class="outline-text-2" id="text-org9471817">
+</div></section>
+<section id="slide-org81c22c7">
+<h3 id="org81c22c7">Set up</h3>
+<ul>
+<li>2 insurers \(I_{a,b}\), 2 providers \(P_{1,2}\)</li>
+<li>1 patient; needs treatment with prob. \(\phi =1\)</li>
+<li>patient is of type \(v \geq 0\), distribution \(F\)</li>
+<li>expected value of treatment at \(P_j\): \(\int_0^{v_j} (e_j+v)f(v)dv\)</li>
+<li>cost of treatment \(c(v)\)</li>
+<li>fixed effort cost of quality \(\gamma(e)\)</li>
+<li>\(c(.),\gamma(.)\) are increasing and convex</li>
+
+</ul>
+
+</section>
+<section id="slide-org8e02a21">
+<h3 id="org8e02a21">First best</h3>
+<ul>
+<li>allowing the patient provider choice, social planner maximizes:</li>
+<li>\(W = \int_0^v (\tilde v + e-c(\tilde v)) f(\tilde v) d \tilde v - 2 \gamma(e)\)</li>
+<li>treatment volume \(v\) and quality \(e\):</li>
+
+</ul>
+
+<div>
+\begin{align}
+\label{eq:1}
+f(v^{*})(v^{*}+e^{*} - c(v^{*})) &=0 \\
+\label{eq:2}
+F(v^{*}) - 2 \gamma' (e^{*}) &=0
+\end{align}
+
+</div>
+
+</section>
+<section id="slide-orgfd773af">
+<h3 id="orgfd773af">Market</h3>
+<ul>
+<li>insurers offer providers contracts \((p,T)\)</li>
+<li>two-part tariff: fee-for-service and capitation</li>
+<li>neither \(v\) nor \(e\) are contractable</li>
+<li>public non-discriminatory offers</li>
+<li>focus on symmetric equilibrium</li>
+
+</ul>
+
+</section>
+<section id="slide-orge194fc9">
+<h3 id="orge194fc9">Timing</h3>
+<ul>
+<li>health procurement market
+
+<ul>
+<li>insurers offer \(p,T\)</li>
+<li>providers accept/reject, pay \(T\) to insurer</li>
+<li>providers invest \(e_j\)</li>
+
+</ul></li>
+
+<li>health insurance market
+
+<ul>
+<li>prob. \(\theta_I\), there is Hotelling compet.; \(1-\theta_I\) consumer chooses
+insurer indep. from value offered</li>
+<li>insurer sets premium \(\sigma\); no co-payments</li>
+<li>consumer decides from which insurer to buy</li>
+
+</ul></li>
+
+<li>health provider market
+
+<ul>
+<li>prob. \(1-\theta_P\) and \(\theta_P\)</li>
+<li>Hotelling competition in efforts (if consumer has choice)</li>
+<li>provider decides whether or not to treat</li>
+<li>if patient is treated, provider receives \(p\)</li>
+
+</ul></li>
+
+</ul>
+
+
+</section>
+<section id="slide-org6baafd6">
+<h3 id="org6baafd6">Provider rents</h3>
+<ul>
+<li>treat patient \(v\) if \(p \geq c(v)\)</li>
+<li>earn rents over infra-marginal patients</li>
+<li>these rents give the incentive to compete for patients by investing \(e\)</li>
+<li>in symmetric equilibrium: \(\gamma'(e) =  \frac{\theta_P}{2t_P} R(v) F(v)\)</li>
+<li>higher \(p\) leads to higher \(v\) and hence \(e\)</li>
+
+</ul>
+
+</section>
+<section >
+
+
+<div id="orgbaad17f" class="figure">
+<p><img src="./295.jpeg" alt="295.jpeg" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Fee-for-service and provider rents</p>
+</div>
+
+</section>
+<section id="slide-org6403b82">
+<h3 id="org6403b82">Insurers</h3>
+<ul>
+<li>insurers use \(T\) to capture rents: \(\gamma_e\) affects \(\Pi_a\)</li>
+<li>\(I_a\) sets \(v_a\) to solve:</li>
+<li>\(\frac{d\Pi_a}{d v_a} = \frac{\partial \Pi_a}{\partial v_a} + \frac{\partial \Pi_a}{\partial e_a} \frac{de}{dv_a} =0\)</li>
+
+</ul>
+
+</section>
+<section id="slide-org44a6bac">
+<h4 id="org44a6bac">treatment volume</h4>
+<ul>
+<li>\(\frac{\partial \Pi_a}{\partial v_{a}} = f(v_a) \left[ (e+v_a-c(v_a)) (\frac{\theta_I}{3} + \frac{1-\theta_I}{2}) + \frac{\theta_I}{6}  c'(v_a) \frac{F(v_a)}{f(v_a)}  \right]\)</li>
+<li>if effort contractible:
+
+<ul>
+<li>\(\theta_I =0\) implies first best: \(e+v_a-c(v_a)=0\)</li>
+<li>\(\theta_I >0\) implies over-treatment: \(e+v_a-c(v_a)<0\)</li>
+
+</ul></li>
+
+<li>&ldquo;monopolist&rdquo; captures whole insurance surplus and induces efficient
+treatment</li>
+<li>competition tends to increase &ldquo;production&rdquo;</li>
+<li>inefficiently high production:
+
+<ul>
+<li>insurer price competition: upward sloping reaction functions</li>
+<li>increasing your cost \(p\), increases your premium \(\sigma\)</li>
+<li>with upward sloping reaction functions, this raises your opponent&rsquo;s
+premium</li>
+<li>this benefit of raising \(p\) is absent for monopolist</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org76a13b4">
+<h4 id="org76a13b4">treatment quality</h4>
+<ul>
+<li>\(\frac{\partial \Pi_a}{\partial e} =  \frac{1}{2} (1-\theta_I)F(v_{a}) - 2 \gamma'(e)\)</li>
+<li>if effort contractible, non-excludability implies:
+
+<ul>
+<li>\(\theta_I =0\) implies lower quality than first best due to positive
+spillovers on other insurer</li>
+<li>\(\theta_I =1\) implies no quality investment as insurer cannot
+appropriate value of quality increase</li>
+<li>quality does not create a difference between insurers</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-orgbcaafd5">
+<h4 id="orgbcaafd5">non-contractible quality</h4>
+<ul>
+<li>trade off between \(\frac{\partial \Pi_a}{\partial v_a}\) and
+\(\frac{\partial \Pi_a}{\partial e_a}\)
+
+<ul>
+<li>either over-treatment with under-investment in quality</li>
+<li>or under-treatment with over-investment</li>
+
+</ul></li>
+
+</ul>
+
+
+</section>
+<section id="slide-org5f453bb">
+<h3 id="org5f453bb">Competition</h3>
+<ul>
+<li>suppose we have \(\theta^*_{P,I}\) such that we are in first best
+
+<ul>
+<li>then a reduction in \(R^*\) requires:</li>
+<li>more intense provider competition (to keep up \(e\))</li>
+<li>more intense insurer competition to balance incentives for
+over-treatment and under-investment</li>
+
+</ul></li>
+
+<li>suppose we have over-treatment and under-investment, then (under some conditions):
+
+<ul>
+<li>increase in \(\theta_P\) increases welfare: quality becomes more
+responsive to volume</li>
+<li>decrease in \(\theta_I\) increases welfare: reduces volume</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbb72fc1">
+<h2 id="orgbb72fc1">Conclusion</h2>
+<div class="outline-text-2" id="text-orgbb72fc1">
+</div></section>
+<section id="slide-org9402724">
+<h3 id="org9402724">Policy implications</h3>
+<ul>
+<li>think of provider rents as caused by asymmetric information</li>
+<li>provider competition raises quality as providers want to earn these rents</li>
+<li>insurer competition tends to raise volume</li>
+<li>but reduces incentives to raise quality</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<p> Created by jan. </p>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

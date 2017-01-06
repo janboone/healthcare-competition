@@ -1,0 +1,242 @@
+#+Title: Treatment quality and quantity
+#+Author: Jan Boone
+#+Date: January 11, 2017
+
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:1
+#+OPTIONS: reveal_title_slide:"<h2>%t</h2><h3>%a</h3><h3>%d</h3>"
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: sky
+#+REVEAL_HLEVEL: 1
+#+REVEAL_POSTAMBLE: <p> Created by jan. </p>
+
+
+
+
+* Introduction
+
+** The story
+
+  - when the health care system is based on markets, 2 recurring policy
+    questions:
+
+    - is there a tendency to treat too many patients?
+    - are there enough incentives to invest in quality?
+
+  - we focus here on non-contractible quality
+  - providers invest in quality to attract patients, but then treating patients
+    should be profitable
+  - if treating patients is profitable, over-treatment becomes a risk
+  - Question: how is this trade off affected by provider and insurer competition?
+
+
+** Motivation
+
+    - The Netherlands introduced competition in health care markets 10 years ago
+    - three different markets:
+
+        - health insurance market
+        - health provider market
+        - health procurement market
+
+    - tractable way to model these markets and characterize treatment quantity
+      and quality
+
+** Which imperfections?
+
+    - a lot of imperfections in health care/insurance markets
+    - here interested in the interaction of the health procurement and provider markets
+    - important imperfections here:
+
+        - insurer cannot contract on value of treatment: over/under supply
+        - insurer cannot contract on quality: too low/too high; non-excludable
+        - patient may know more about quality than insurer
+
+    - let's not worry about
+
+        - adverse selection
+        - patient moral hazard
+        - health insurance uptake/deadweight loss (inelastic demand)
+
+
+** The intuition
+
+    - fee-for-service affects treatment decisions and provider rents
+    - capitation fees redistribute rents between insurers and providers
+    - provider competition tends to
+
+        - increase (non-contractable) quality investments
+
+    - insurer competition tends to
+
+        - raise treatments (over-supply)
+        - reduce effort investments (appropriability)
+
+
+** Results
+
+    - "monopoly": consumer chooses without regard for value created
+    - provider "monopoly" leads to zero quality investments
+    - insurer "monopoly" allows insurer to capture return on quality investments
+    - starting from provider and insurer "monopoly", an increase in competition
+      on each market is welfare enhancing
+
+** Simplify a lot
+
+   - two insurers and two providers
+   - contracts are public and non-discriminating
+   - focus on symmetric equilibria
+   - no exclusive contracts
+
+
+** Literature
+
+   - Porter and Teisberg (2006)
+   - Gaynor et al. (2015)
+   - Gal-Or (1997, 1999)
+   - Douven et al. (2014)
+   - Bijlsma et al. (2015)
+
+* Model
+
+** Set up
+
+    - 2 insurers $I_{a,b}$, 2 providers $P_{1,2}$
+    - 1 patient; needs treatment with prob. $\phi =1$
+    - patient is of type $v \geq 0$, distribution $F$
+    - expected value of treatment at $P_j$: $\int_0^{v_j} (e_j+v)f(v)dv$
+    - cost of treatment $c(v)$
+    - fixed effort cost of quality $\gamma(e)$
+    - $c(.),\gamma(.)$ are increasing and convex
+
+** First best
+
+    - allowing the patient provider choice, social planner maximizes:
+    - $W = \int_0^v (\tilde v + e-c(\tilde v)) f(\tilde v) d \tilde v - 2 \gamma(e)$
+    - treatment volume $v$ and quality $e$:
+
+\begin{align}
+\label{eq:1}
+f(v^{*})(v^{*}+e^{*} - c(v^{*})) &=0 \\
+\label{eq:2}
+F(v^{*}) - 2 \gamma' (e^{*}) &=0
+\end{align}
+
+** Market
+
+    - insurers offer providers contracts $(p,T)$
+    - two-part tariff: fee-for-service and capitation
+    - neither $v$ nor $e$ are contractable
+    - public non-discriminatory offers
+    - focus on symmetric equilibrium
+
+** Timing
+
+    - health procurement market
+
+        - insurers offer $p,T$
+        - providers accept/reject, pay $T$ to insurer
+        - providers invest $e_j$
+
+    - health insurance market
+
+        - prob. $\theta_I$, there is Hotelling compet.; $1-\theta_I$ consumer chooses
+          insurer indep. from value offered
+        - insurer sets premium $\sigma$; no co-payments
+        - consumer decides from which insurer to buy
+
+    - health provider market
+
+        - prob. $1-\theta_P$ and $\theta_P$
+        - Hotelling competition in efforts (if consumer has choice)
+        - provider decides whether or not to treat
+        - if patient is treated, provider receives $p$
+
+
+** Provider rents
+
+    - treat patient $v$ if $p \geq c(v)$
+    - earn rents over infra-marginal patients
+    - these rents give the incentive to compete for patients by investing $e$
+    - in symmetric equilibrium: $\gamma'(e) =  \frac{\theta_P}{2t_P} R(v) F(v)$
+    - higher $p$ leads to higher $v$ and hence $e$
+
+#+REVEAL: split
+
+#+CAPTION: Fee-for-service and provider rents
+#+NAME:   fig:rents
+[[./295.jpeg]]
+
+** Insurers
+
+    - insurers use $T$ to capture rents: $\gamma_e$ affects $\Pi_a$
+    - $I_a$ sets $v_a$ to solve:
+    - $\frac{d\Pi_a}{d v_a} = \frac{\partial \Pi_a}{\partial v_a} + \frac{\partial \Pi_a}{\partial e_a} \frac{de}{dv_a} =0$
+
+*** treatment volume
+
+    - $\frac{\partial \Pi_a}{\partial v_{a}} = f(v_a) \left[ (e+v_a-c(v_a)) (\frac{\theta_I}{3} + \frac{1-\theta_I}{2}) + \frac{\theta_I}{6}  c'(v_a) \frac{F(v_a)}{f(v_a)}  \right]$
+    - if effort contractible:
+
+        - $\theta_I =0$ implies first best: $e+v_a-c(v_a)=0$
+        - $\theta_I >0$ implies over-treatment: $e+v_a-c(v_a)<0$
+
+    - "monopolist" captures whole insurance surplus and induces efficient
+      treatment
+    - competition tends to increase "production"
+    - inefficiently high production:
+
+        - insurer price competition: upward sloping reaction functions
+        - increasing your cost $p$, increases your premium $\sigma$
+        - with upward sloping reaction functions, this raises your opponent's
+          premium
+        - this benefit of raising $p$ is absent for monopolist
+
+*** treatment quality
+
+    - $\frac{\partial \Pi_a}{\partial e} =  \frac{1}{2} (1-\theta_I)F(v_{a}) - 2 \gamma'(e)$
+    - if effort contractible, non-excludability implies:
+
+        - $\theta_I =0$ implies lower quality than first best due to positive
+          spillovers on other insurer
+        - $\theta_I =1$ implies no quality investment as insurer cannot
+          appropriate value of quality increase
+        - quality does not create a difference between insurers
+
+*** non-contractible quality
+
+    - trade off between $\frac{\partial \Pi_a}{\partial v_a}$ and
+      $\frac{\partial \Pi_a}{\partial e_a}$
+
+        - either over-treatment with under-investment in quality
+        - or under-treatment with over-investment
+
+
+** Competition
+
+    - suppose we have $\theta^*_{P,I}$ such that we are in first best
+
+        - then a reduction in $R^*$ requires:
+        - more intense provider competition (to keep up $e$)
+        - more intense insurer competition to balance incentives for
+          over-treatment and under-investment
+
+    - suppose we have over-treatment and under-investment, then (under some conditions):
+
+        - increase in $\theta_P$ increases welfare: quality becomes more
+          responsive to volume
+        - decrease in $\theta_I$ increases welfare: reduces volume
+
+* Conclusion
+
+** Policy implications
+
+    - think of provider rents as caused by asymmetric information
+    - provider competition raises quality as providers want to earn these rents
+    - insurer competition tends to raise volume
+    - but reduces incentives to raise quality
