@@ -33,7 +33,7 @@
 ** The setting
 
   - market with profit max. insurers and providers
-  - regulator who can set minimum standards
+  - regulator who can set (minimum) standards
   - imperfections:
     - not possible to contract treatment (patient's condition)
     - there is a non-contractible quality aspect
@@ -41,19 +41,31 @@
   - non-contr. quality one of the arguments for introducing competition
   - providers invest in quality to attract patients only if treatment is profitable
   - if treating patients is profitable, over-treatment becomes a risk
+    - protocols are not perfect
   - how can this be resolved?
 
 ** The results
 
-  - 
+  - to implement welfare maximizing outcomes, competition is needed in insurer and health provider markets
+    - purely public system without competition is not optimal
+  - over-treatment and under-investment in quality happen when provider competition is "too low"
+  - under-investment is addressed by increasing provider competition
+  - over-treatment is addressed by decreasing insurer competition
 
+** Literature
+
+   - Porter and Teisberg (2006)
+   - Gaynor et al. (2015)
+   - Gal-Or (1997, 1999)
+   - Douven et al. (2014)
+   - Bijlsma et al. (2015)
 
 * Model
 
 ** What is competition?
 
   - the advantage of having a model is that we can be precise about what "competition" means
-  - probability that consumer makes a choice (insurer/provider) based on quality differences
+  - probability $\theta$ that consumer makes a choice (insurer/provider) based on quality differences
   - is not the same as "profit"
   - also not the same as (low) concentration:
     - if one provider is better than another, competition increases concentration
@@ -63,7 +75,9 @@
   - if there are high switching costs of changing insurer
   - everyone in Brabant chooses CZ
   - patients visit the closest provider, not the best one
-  - 
+    - e.g. because they do not know quality
+    - don't understand quality information
+    - choose on the wrong dimensions ("nurses are nice and food is great")
 
 
 ** How can competition be changed?
@@ -75,42 +89,48 @@
     - UK government asked referring physicians to give patients five choices for a hospital
   - insurers:
     - websites that compare contracts
-    - reduce reserve obligations (a health insurer is not a pension fund)
+    - degree to which insurers' contracts are allowed to differ (product differentiation)
+    - reduce reserve/solvency obligations (a health insurer is not a pension fund)
 
 ** What is non-contractible quality?
 
   - how doctors relate to patients
-  - 
+  - Porter and Teisberg: gather information of what treatments work under which circumstances exactly
+    - whether the infrastructure for such data gathering is present is contractible
+    - effort to do this carefully is not contractible
 
 ** Why is treatment not contractible?
 
-  - protocols
+  - there are protocols stating conditions for treatment
+  - but there is always a grey area
+  - we know that treatment reacts to financial incentives (e.g. fee-for-service) in this grey area
 
-** Simplify a lot
+** Model simplifies a lot
 
-  - two insurers and two providers
-  - contracts are public and non-discriminating
-  - focus on symmetric equilibria
-  - no exclusive contracts
-  - no adverse selection 
+  - to focus on the points above, we simplify on other dimensions:
+   - two insurers and two providers
+   - contracts are public and non-discriminating
+   - focus on symmetric equilibria
+   - no exclusive contracts
+   - no adverse selection 
 
 
 ** Timing
 
-    - health procurement market
+    - *health procurement market*
 
-        - insurers offer fee-for-service, capitation fees to providers
+        - insurers offer fee-for-service and capitation fees to providers
         - providers accept/reject
         - providers invest effort $e$ in quality
 
-    - health insurance market
+    - *health insurance market*
 
         - prob. $\theta_I$, there is compet.; $1-\theta_I$ consumer chooses
           insurer indep. from value offered
         - insurer sets premium
         - consumer decides from which insurer to buy
 
-    - health provider market
+    - *health provider market*
 
         - prob. $1-\theta_P$ and $\theta_P$
         - competition in efforts
@@ -118,24 +138,20 @@
         - if patient is treated, provider receives fee-for-service
 
 
-** Literature
-
-   - Porter and Teisberg (2006)
-   - Gaynor et al. (2015)
-   - Gal-Or (1997, 1999)
-   - Douven et al. (2014)
-   - Bijlsma et al. (2015)
-
-
-* Results
-
+* Analysis
 
 ** Fee-for-service
 
+  - assume that treatment cost for a patient increases with the treatment value
+    - more complicated cases yield higher benefit and cost
+    - over-treatment: $v-c(v) <0$ is treated
+    - under-treatment: $v-c(v)>0$ is not treated
   - if insurer sets higher fee-for-service:
     - provider increases volume
     - provider profits increase, making it more attractive to capture patients by offering high quality
     - by increasing fee-for-service both volume and quality increase
+
+#+REVEAL: split
 
 #+CAPTION: Fee-for-service and provider rents
 #+NAME:   fig:rents
@@ -145,17 +161,18 @@
 ** Quality
 
   - as provider competition increases --patients more sensitive to quality-- providers invest more in quality
-  - in a public system without competition, no incentive to invest in quality
+  - in a public system without competition, no incentive to invest in (this type of) quality
   - for insurers there are quality spillover effects:
     - stimulate quality by increasing fee-for-service
     - as quality is not contractible, it is not excludable
-    - competing insurers invest less in quality
+    - your competitor benefits from increased quality as well
+    - competing insurers tend to under-invest in quality
 
 ** Volume
 
   - as insurer competition increases:
-    - "production" (treatment volume) increases
-    - 
+    - "production" (treatment volume) increases via higher fee-for-service
+    - insurers suffer more from quality spillover effects and tend to invest less in quality (lower fee-for-service)
 
 ** Competition
 
@@ -169,31 +186,36 @@
 #+REVEAL: split
 
 
-    - "monopolist" captures whole insurance surplus and induces efficient
-      treatment
-    - competition tends to increase "production"
+- low $\theta_P$ leads to over-treatment and under-investment
+  - when $\theta_P$ is low, providers under-invest even from the point of view of insurers
+  - insurers increase treatment beyond efficiency to stimulate quality: over-treatment
+  - but insurers do not implement welfare max. quality
+- this is the outcome some people fear in a health care *market*
+- but it is due to insufficient competition
+
+#+REVEAL: split
+
+- high $\theta_P$, leads to high quality
+  - welfare max. quality, is over-investment from the insurers point of view (due to spillovers)
+  - hence insurers tend to reduce quality by lowering the fee-for-service
+  - make competing for patients less profitable for providers
+  - this tends to lead to under-treatment
 
 
-** Competition
-
-    - suppose we have $\theta^*_{P,I}$ such that we are in first best
-
-        - then a reduction in $R^*$ requires:
-        - more intense provider competition (to keep up $e$)
-        - more intense insurer competition to balance incentives for
-          over-treatment and under-investment
-
-    - suppose we have over-treatment and under-investment, then (under some conditions):
-
-        - increase in $\theta_P$ increases welfare: quality becomes more
-          responsive to volume
-        - decrease in $\theta_I$ increases welfare: reduces volume
 
 * Conclusion
 
+** Insights
+
+    - think of provider rents/profits as caused by asymmetric information about patient type
+    - provider competition raises quality as providers want to earn these rents
+    - insurer competition tends to raise volume (competition leads to higher production)
+    - but reduces incentives to raise quality (spillover effects)
+
 ** Policy implications
 
-    - think of provider rents as caused by asymmetric information
-    - provider competition raises quality as providers want to earn these rents
-    - insurer competition tends to raise volume
-    - but reduces incentives to raise quality
+- if you believe we currently have over-treatment and under-investment in quality:
+  - increase provider competition to stimulate quality efforts
+    - e.g. by providing more quality information to patients
+  - reduce insurer competition to reduce "output"
+    - e.g. by allowing insurers to differentiate their products more
