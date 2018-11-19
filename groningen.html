@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Treatment quality and quantity</title>
+<meta name="author" content="(Jan Boone)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/sky.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>Treatment quality and quantity</h2><h3>Jan Boone</h3><h3>December 12, 2018</h3>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org007f814">Introduction</a></li>
+<li><a href="#/slide-org8b639de">Model</a></li>
+<li><a href="#/slide-org0845834">Analysis</a></li>
+<li><a href="#/slide-orgbc514f9">Conclusion</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+
+
+
+<section>
+<section id="slide-org007f814">
+<h2 id="org007f814">Introduction</h2>
+<div class="outline-text-2" id="text-org007f814">
+</div>
+</section>
+<section id="slide-org5923eaf">
+<h3 id="org5923eaf">The story</h3>
+<ul>
+<li>in the Netherlands we have introduced competition elements in health care markets</li>
+<li>but people tend to worry about this</li>
+<li>some expect
+<ul>
+<li>over-treatment (this is how you earn money)</li>
+<li>under-investment in quality (you cut costs)</li>
+
+</ul></li>
+<li>this paper analyzes the effects of provider and insurer competition in health care markets on treatment volume and quality</li>
+
+</ul>
+
+</section>
+<section id="slide-orgb1fe74d">
+<h3 id="orgb1fe74d">The setting</h3>
+<ul>
+<li>market with profit max. insurers and providers</li>
+<li>regulator who can set (minimum) standards</li>
+<li>imperfections:
+<ul>
+<li>not possible to contract particular patient's condition
+<ul>
+<li>whether treatment is necessary or not</li>
+
+</ul></li>
+<li>a non-contractible quality aspect</li>
+
+</ul></li>
+<li>if quality fully contractible, regulator can set it</li>
+<li>non-contr. quality one of the arguments for introducing competition</li>
+<li>providers invest in quality to attract patients only if treatment is profitable</li>
+<li>if treating patients is profitable, over-treatment becomes a risk
+<ul>
+<li>protocols are not perfect</li>
+
+</ul></li>
+<li>how can this be resolved?</li>
+
+</ul>
+
+</section>
+<section id="slide-orgc4e42a0">
+<h3 id="orgc4e42a0">The results</h3>
+<ul>
+<li>to implement welfare maximizing outcomes, competition is needed in insurer and health provider markets
+<ul>
+<li>purely public system without competition cannot implement first best</li>
+
+</ul></li>
+<li>over-treatment and under-investment in quality happen when provider competition is "too low"</li>
+<li>under-investment is addressed by increasing provider competition</li>
+<li>over-treatment is addressed by decreasing insurer competition</li>
+
+</ul>
+
+</section>
+<section id="slide-org26bf9af">
+<h3 id="org26bf9af">Literature</h3>
+<ul>
+<li>Porter and Teisberg (2006)</li>
+<li>Gaynor et al. (2015)</li>
+<li>Gal-Or (1997, 1999)</li>
+<li>Douven et al. (2014)</li>
+<li>Bijlsma et al. (2015)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org8b639de">
+<h2 id="org8b639de">Model</h2>
+<div class="outline-text-2" id="text-org8b639de">
+</div>
+</section>
+<section id="slide-orga024ecb">
+<h3 id="orga024ecb">What is competition?</h3>
+<ul>
+<li>the advantage of having a model is that we can be precise about what "competition" means</li>
+<li>probability \(\theta\) that consumer makes a choice (insurer/provider) based on quality differences
+<ul>
+<li>in a more competitive market, the more efficient provider/insurer gains vs less efficient supplier</li>
+
+</ul></li>
+<li>competition is not the same as "profit"</li>
+<li>also not the same as (low) concentration:
+<ul>
+<li>if one provider is better than another, competition increases concentration</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org77705a6">
+<h3 id="org77705a6">Competition is low</h3>
+<ul>
+<li>if there are high switching costs of changing insurer
+<ul>
+<li>everyone in Brabant chooses CZ</li>
+
+</ul></li>
+<li>patients visit the closest provider, not the best one
+<ul>
+<li>e.g. because they do not know quality</li>
+<li>don't understand quality information</li>
+<li>choose on the wrong dimensions ("nurses are nice and food is great")</li>
+
+</ul></li>
+
+</ul>
+
+
+</section>
+<section id="slide-orgbe850de">
+<h3 id="orgbe850de">How can competition be changed?</h3>
+<ul>
+<li>do not allow mergers, collusion</li>
+<li>providers:
+<ul>
+<li>publish quality indicators, patient satisfaction reports</li>
+<li>abolish agreements between specialists in (geographical) areas</li>
+<li>UK government asked referring physicians to give patients five choices for a hospital</li>
+
+</ul></li>
+<li>insurers:
+<ul>
+<li>websites that compare contracts</li>
+<li>degree to which insurers' contracts are allowed to differ (product differentiation)</li>
+<li>reduce reserve/solvency obligations (a health insurer is not a pension fund)</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org6a471b2">
+<h3 id="org6a471b2">What is non-contractible quality?</h3>
+<ul>
+<li>how doctors relate to patients</li>
+<li>Porter and Teisberg: gather information of what treatments work under which circumstances exactly
+<ul>
+<li>whether the infrastructure for such data gathering is present is contractible</li>
+<li>effort to do this carefully is not contractible</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org7dedf1f">
+<h3 id="org7dedf1f">Why is treatment not contractible?</h3>
+<ul>
+<li>there are protocols stating conditions for treatment</li>
+<li>but there is always a grey area</li>
+<li>we know that treatment reacts to financial incentives (e.g. fee-for-service) in this grey area</li>
+
+</ul>
+
+</section>
+<section id="slide-org25887dd">
+<h3 id="org25887dd">Model simplifies a lot</h3>
+<ul>
+<li>to focus on the points above, we simplify on other dimensions:
+<ul>
+<li>two insurers and two providers</li>
+<li>contracts are public and non-discriminating</li>
+<li>focus on symmetric equilibria</li>
+<li>no exclusive contracts</li>
+<li>no adverse selection</li>
+<li>no patient moral hazard</li>
+
+</ul></li>
+
+</ul>
+
+
+</section>
+<section id="slide-orgf60d3e2">
+<h3 id="orgf60d3e2">Timing</h3>
+<ul>
+<li><b>health procurement market</b>
+
+<ul>
+<li>insurers offer fee-for-service and capitation fees to providers</li>
+<li>providers accept/reject</li>
+<li>providers invest effort \(e\) in quality</li>
+
+</ul></li>
+
+<li><b>health insurance market</b>
+
+<ul>
+<li>prob. \(\theta_I\), there is compet.; \(1-\theta_I\) consumer chooses
+insurer indep. from value offered</li>
+<li>insurer sets premium</li>
+<li>consumer decides from which insurer to buy</li>
+
+</ul></li>
+
+<li><b>health provider market</b>
+
+<ul>
+<li>prob. \(1-\theta_P\) and \(\theta_P\)</li>
+<li>competition in efforts</li>
+<li>provider decides whether or not to treat \(=>\) volume \(v\)</li>
+<li>if patient is treated, provider receives fee-for-service</li>
+
+</ul></li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org0845834">
+<h2 id="org0845834">Analysis</h2>
+<div class="outline-text-2" id="text-org0845834">
+</div>
+</section>
+<section id="slide-org467d10d">
+<h3 id="org467d10d">Fee-for-service</h3>
+<ul>
+<li>assume that treatment cost \(c\) for a patient increases with the treatment value \(v\)
+<ul>
+<li>\(c(v),c'(v),c''(v) > 0\)</li>
+<li>more complicated cases yield higher benefit and cost</li>
+<li>over-treatment: \(v-c(v) <0\) is treated</li>
+<li>under-treatment: \(v-c(v)>0\) is not treated</li>
+
+</ul></li>
+<li>provider treats till \(c(v) = p\)</li>
+<li>if insurer sets higher fee-for-service \(p\):
+<ul>
+<li>provider increases volume</li>
+<li>provider profits increase, making it more attractive to capture patients by offering high quality</li>
+<li>by increasing fee-for-service both volume and quality increase</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section >
+
+
+<div id="orgf880363" class="figure">
+<p><img src="./295.jpeg" alt="295.jpeg" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Fee-for-service and provider rents</p>
+</div>
+
+
+</section>
+<section id="slide-org85892b8">
+<h3 id="org85892b8">Quality</h3>
+<ul>
+<li>provider 1 offers insurer \(a\)'s patient quality: \(\int_0^{v_a} (e^1+v)dF(v)\) where \(c(v_a)=p_a\)</li>
+<li>fixed cost of quality \(e\) given by \(\gamma(e)\) which is increasing and convex</li>
+<li>as provider competition \(\theta_P\) increases &#x2013;patients more sensitive to quality&#x2013; providers invest more in quality</li>
+<li>in a (public) system without competition, no incentive to invest in (this type of) quality</li>
+<li>for insurers there are quality spillover effects:
+<ul>
+<li>stimulate quality by increasing fee-for-service</li>
+<li>as quality is not contractible, it is not excludable</li>
+<li>competing insurer benefits from increased quality as well</li>
+<li>competing insurers tend to under-invest in quality</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org549b4db">
+<h3 id="org549b4db">Volume</h3>
+<ul>
+<li>as insurer competition \(\theta_I\) increases, trade off between:
+<ul>
+<li>"production" (treatment volume) increases via higher fee-for-service</li>
+<li>insurers suffer more from quality spillover effects and tend to invest less in quality (lower fee-for-service)</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org84e63b9">
+<h3 id="org84e63b9">Volume and spillover effects</h3>
+<ul>
+<li>volume effect:
+<ul>
+<li>as \(I_a\) increases \(p_a\), more expected value is created for patient (more likely to be treated)</li>
+<li>also expected cost \(F(v_a)*p_a\) increases in health insurance market</li>
+<li>with price competition (upward sloping reaction functions), part of this cost increase is passed on to consumers</li>
+<li>the more competitive the market (\(\theta_I\)), the more this happens</li>
+<li>higher \(\theta_I\) leads to higher \(p\) and hence higher volume</li>
+
+</ul></li>
+
+<li>spillover effect:
+<ul>
+<li>the more competitive a market, the more important relative quality becomes (compared to "monopoly")</li>
+<li>due to non-excludability, relative quality does not increase in a competitive market</li>
+<li>hence quality investments fall with insurer competition</li>
+
+</ul></li>
+
+</ul>
+
+
+</section>
+<section id="slide-org608485f">
+<h3 id="org608485f">Competition</h3>
+
+<div id="orgd189e57" class="figure">
+<p><img src="./welfare.jpeg" alt="welfare.jpeg" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Welfare</p>
+</div>
+
+
+
+
+</section>
+<section >
+
+
+<ul>
+<li>low \(\theta_P\) leads to over-treatment and under-investment
+<ul>
+<li>when \(\theta_P\) is low, providers under-invest even from the point of view of insurers
+<ul>
+<li>insurer profit is increasing in quality</li>
+
+</ul></li>
+<li>insurers increase treatment beyond efficiency to stimulate quality: over-treatment</li>
+<li>but insurers do not implement welfare max. quality</li>
+
+</ul></li>
+<li>this is the outcome some people fear in a health care <b>market</b></li>
+<li>but it is due to insufficient competition</li>
+
+</ul>
+
+</section>
+<section >
+
+<ul>
+<li>high \(\theta_P\), leads to high quality
+<ul>
+<li>welfare max. quality, is over-investment from the insurers point of view (due to spillovers)</li>
+<li>hence insurers tend to reduce quality by lowering the fee-for-service \(p\)</li>
+<li>lower \(p\) makes competing for patients less profitable for providers</li>
+<li>hence \(\theta_I\) should be high enough to prevent this</li>
+
+</ul></li>
+
+</ul>
+
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgbc514f9">
+<h2 id="orgbc514f9">Conclusion</h2>
+<div class="outline-text-2" id="text-orgbc514f9">
+</div>
+</section>
+<section id="slide-orge5e64fc">
+<h3 id="orge5e64fc">Insights</h3>
+<ul>
+<li>think of provider rents/profits as caused by asymmetric information about patient type</li>
+<li>provider competition raises quality as providers want to earn these rents</li>
+<li>insurer competition tends to raise volume (competition leads to higher production)</li>
+<li>but reduces incentives to raise quality (spillover effects)</li>
+
+</ul>
+
+</section>
+<section id="slide-org2291cf4">
+<h3 id="org2291cf4">Policy implications</h3>
+<ul>
+<li>if you believe we currently have over-treatment and under-investment in quality:
+<ul>
+<li>increase provider competition to stimulate quality efforts
+<ul>
+<li>e.g. by providing more quality information to patients</li>
+
+</ul></li>
+<li>reduce insurer competition to reduce "output"
+<ul>
+<li>e.g. by allowing insurers to differentiate their products more</li>
+
+</ul></li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<p> Created by jan. </p>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
