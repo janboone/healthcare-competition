@@ -135,7 +135,7 @@
     - *health provider market*
 
         - prob. $1-\theta_P$ and $\theta_P$
-        - competition in efforts
+        - competition based on chosen efforts
         - provider decides whether or not to treat $=>$ volume $v$
         - if patient is treated, provider receives fee-for-service
 
@@ -164,10 +164,10 @@
 
 ** Quality
 
-  - provider 1 offers insurer $a$'s patient quality: $\int_0^{v_a} (e^1+v)dF(v)$ where $c(v_a)=p_a$
+  - provider 1 offers insurer $a$'s patient value: $\int_0^{v_a} (e^1+v)dF(v)$ where $c(v_a)=p_a$
   - fixed cost of quality $e$ given by $\gamma(e)$ which is increasing and convex
   - as provider competition $\theta_P$ increases --patients more sensitive to quality-- providers invest more in quality
-  - in a (public) system without competition, no incentive to invest in (this type of) quality
+  - in a (public) system without competition, no provider incentive to invest in (this type of) quality
   - for insurers there are quality spillover effects:
     - stimulate quality by increasing fee-for-service
     - as quality is not contractible, it is not excludable
@@ -180,20 +180,33 @@
     - "production" (treatment volume) increases via higher fee-for-service
     - insurers suffer more from quality spillover effects and tend to invest less in quality (lower fee-for-service)
 
-** Volume and spillover effects
+** Volume effect
 
-  - volume effect:
     - as $I_a$ increases $p_a$, more expected value is created for patient (more likely to be treated)
     - also expected cost $F(v_a)*p_a$ increases in health insurance market
     - with price competition (upward sloping reaction functions), part of this cost increase is passed on to consumers
     - the more competitive the market ($\theta_I$), the more this happens
     - higher $\theta_I$ leads to higher $p$ and hence higher volume
 
-  - spillover effect:
+
+
+** spillover effect:
+
     - the more competitive a market, the more important relative quality becomes (compared to "monopoly")
     - due to non-excludability, relative quality does not increase in a competitive market
-    - hence quality investments fall with insurer competition
+    - hence quality investments fall with insurer competition:
 
+\begin{equation}
+\label{eq:1}
+\frac{\partial \Pi^a}{\partial e} =  \frac{1}{2} (1-\theta_I)F(v^{a}) - 2 \gamma'(e)
+\end{equation}
+
+    - compared to first best:
+
+\begin{equation}
+\label{eq:2}
+\frac{\partial W}{\partial e}= F(v^{*}) - 2 \gamma' (e^{*}) =0
+\end{equation}
 
 ** Competition
 
